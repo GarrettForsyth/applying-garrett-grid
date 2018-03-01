@@ -1,3 +1,6 @@
+body {
+  text-align: center; }
+
 @font-face {
   font-family: 'norse';
   font-weight: bold;
@@ -7,6 +10,9 @@
 
 .nav-spacer {
   height: 100px; }
+
+.spacer-sm {
+  height: 3rem; }
 
 h1, h2, h3, h4, p, a {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -135,6 +141,10 @@ h3 {
   width: auto;
   margin-bottom: 3rem; }
 
+@media (min-width: 540px) {
+  .img-sm {
+    height: 120px;
+    width: auto; } }
 .curriculum-details {
   vertical-align: center; }
 
@@ -176,16 +186,38 @@ h3 {
 .success-story {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  marign-bottom: 3rem;
+  margin-bottom: 3rem;
   text-align: left; }
 
 .success-story a {
   font-size: 1.25rem;
   text-decoration: none; }
 
+.success-avatar {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; }
+
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .hide-540 {
+    display: none; } }
+@media (min-width: 541px) {
+  .hide-540 {
+    display: block; }
+
+  .success-avatar {
+    display: inline-block; }
+
+  .success-story {
+    float: right;
+    width: 80%; } }
 .success-story-lk {
   margin-bottom: 4rem;
   color: rgba(74, 74, 74, 0.7); }
+
+.success-stories {
+  background: linear-gradient(#fff, #f3f3f3); }
 
 .signup-header {
   margin-top: 5rem;
@@ -205,10 +237,35 @@ h3 {
   width: 25px; }
 
 .social-nav {
-  overflow: hidden; }
+  overflow: hidden;
+  display: inline-block; }
 
 .social-nav .row .col-3 {
   vertical-align: center;
   text-align: center; }
+
+.footer-links {
+  float: right;
+  width: 50%; }
+
+.footer-links-container {
+  display: inline-block;
+  width: 45%; }
+  .footer-links-container li {
+    text-align: left;
+    margin-bottom: 1rem; }
+    .footer-links-container li a {
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      color: rgba(74, 74, 74, 0.7);
+      text-decoration: none; }
+
+@media (min-width: 541px) {
+  #footer {
+    height: 140px; }
+
+  .social-nav {
+    float: left;
+    width: 50%; } }
 
 /*# sourceMappingURL=master.css.map */

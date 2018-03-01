@@ -5,6 +5,12 @@ $odin-font-stack: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $odin-condensed-font-stack: "Open Sans Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $nav-height: 100px;
+$white-smoke: #f3f3f3;
+  
+
+body {
+  text-align: center;
+}
 
 @font-face {
   font-family: 'norse';
@@ -19,6 +25,10 @@ $nav-height: 100px;
 
 .nav-spacer {
   height: 100px;
+}
+
+.spacer-sm {
+  height: 3rem;
 }
 
 h1, h2, h3, h4, p, a {
@@ -183,12 +193,20 @@ h3 {
 
 }
 
+@media (min-width: 540px) {
+  .img-sm {
+    height: 120px;
+    width: auto;
+  }
+}
+
 .curriculum-details {
   vertical-align: center;
 }
 
 .bg-white-smoke {
-  background: #f3f3f3;
+  background: $white-smoke;
+  
 }
 
 .curriculum-details-tile {
@@ -237,7 +255,7 @@ h3 {
 .success-story  {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  marign-bottom: 3rem;
+  margin-bottom: 3rem;
 
   text-align: left;
 }
@@ -247,10 +265,47 @@ h3 {
   text-decoration: none;
 }
 
+.success-avatar {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+
+
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .hide-540 {
+    display: none;
+  }
+}
+
+@media (min-width: 541px) {
+  .hide-540 {
+    display: block;
+  }
+
+  .success-avatar {
+    display: inline-block;
+  }
+
+  .success-story {
+    float: right;
+    width: 80%;
+  }
+}
+
 .success-story-lk {
   margin-bottom: 4rem;
   color: rgba(74,74,74,0.7);
 }
+
+.success-stories {
+  background: linear-gradient(#fff, $white-smoke);
+}
+
 
 .signup-header {
   margin-top: 5rem;
@@ -275,10 +330,52 @@ h3 {
 
 .social-nav {
   overflow: hidden;
+  display: inline-block;
 }
+
+
 
 .social-nav .row .col-3 {
   vertical-align: center;
   text-align: center;
 }
 
+.footer-links {
+  float: right;
+  width: 50%;
+}
+
+.footer-links-container {
+  display: inline-block;
+  width: 45%;
+
+  li {
+
+    text-align: left;
+    margin-bottom: 1rem;
+
+    a {
+      font-family: $odin-font-stack;
+      font-weight: 900;
+      color: rgba(74,74,74,0.7);
+      
+      text-decoration: none;
+
+    }
+
+  }
+}
+
+
+@media (min-width: 541px) {
+  #footer{
+    height: 140px;
+    
+  }
+
+  .social-nav {
+    float: left;
+    width: 50%;
+  }
+
+}
