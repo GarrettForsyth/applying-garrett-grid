@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'norse';
+  font-weight: bold;
+  src: url("../fonts/Norse-Bold.woff") format("woff"), url("../fonts/Norse-Bold.ttf") format("truetype"); }
+.container {
+  overflow: auto; }
+
+.nav-spacer {
+  height: 100px; }
+
+h1, h2, h3, h4, p, a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 0.67em;
+  margin-right: 0.67em;
+  line-height: 1.0;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 2.6px;
+  margin-bottom: 2rem; }
+
+p {
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.88; }
+
+@media (max-width: 1199px) {
+  .h1 {
+    max-width: 80%;
+    margin: 0 auto 2rem auto; } }
+.header-nav {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  height: 100px;
+  background-color: #fff; }
+
+.header-nav .row .col-8 .logo-text {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: 'norse';
+  font-size: 1.7rem;
+  display: inline-block; }
+
+#odin-icon {
+  height: 60px;
+  width: 45px; }
+
+#options-icon {
+  margin-right: 20px;
+  height: 60px;
+  width: 30px; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.hero {
+  text-align: center;
+  width: 100%; }
+
+.accent {
+  color: #ce9732; }
+
+.secondary {
+  color: rgba(74, 74, 74, 0.7); }
+
+.main-heading {
+  overflow: auto;
+  margin-top: 0;
+  margin-bottom: 1.375rem;
+  padding-bottom: 1.875rem; }
+
+.sub-heading {
+  padding-bottom: 4.375rem; }
+
+.center {
+  text-align: center;
+  vertical-align: middle; }
+
+.view-curriculum-lk {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  color: white;
+  text-decoration: none;
+  background-color: #6abfc3; }
+
+.button {
+  border-radius: 0.2em;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-align: center;
+  vertical-align: center; }
+
+.how-it-works {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  text-align: center; }
+
+h2 {
+  margin-bottom: 36px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  color: #4a4a4a; }
+
+.tile {
+  padding: 1rem;
+  text-align: center;
+  vertical-align: center; }
+
+h3 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  color: #4a4a4a; }
+
+.img-sm {
+  height: 80px;
+  width: auto;
+  margin-bottom: 3rem; }
+
+.curriculum-details {
+  vertical-align: center; }
+
+.bg-white-smoke {
+  background: #f3f3f3; }
+
+.curriculum-details-tile {
+  height: 150px;
+  margin: 0 auto 15px;
+  padding: 25px;
+  width: 270px;
+  max-width: 270px;
+  background: white;
+  -webkit-box-shadow: 0 7px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.05); }
+
+.curriculum-details-img-sm {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px; }
+
+.orange {
+  background: #cc9543;
+  margin-top: 36px;
+  margin-bottom: 72px; }
+
+.success-stories {
+  margin-top: 72px; }
+
+.details {
+  margin-bottom: 2.5rem; }
+
+.success-stories {
+  overflow: hidden; }
+
+.bottom {
+  margin-bottom: 3rem; }
+
+.success-story {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  marign-bottom: 3rem;
+  text-align: left; }
+
+.success-story a {
+  font-size: 1.25rem;
+  text-decoration: none; }
+
+.success-story-lk {
+  margin-bottom: 4rem;
+  color: rgba(74, 74, 74, 0.7); }
+
+.signup-header {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  line-height: 3.1rem;
+  font-size: 2.3rem;
+  color: rgba(74, 74, 74, 0.7); }
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+
+.social-icon {
+  height: 25px;
+  width: 25px; }
+
+.social-nav {
+  overflow: hidden; }
+
+.social-nav .row .col-3 {
+  vertical-align: center;
+  text-align: center; }
+
+/*# sourceMappingURL=master.css.map */
