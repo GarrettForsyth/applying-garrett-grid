@@ -67,16 +67,20 @@ p {
 
 .header-nav {
   position: fixed;
-
-  margin: auto;
   width: 100%;
+  margin: auto;
+
   top: 0;
+  left: 0;
+  right: 0;
+
   height: 100px;
 
   background-color: #fff;
 }
 
 .header-nav .row .col-8 .logo-text {
+  float: left;
   margin-top: 20px;
   margin-left: 10px;
 
@@ -86,6 +90,7 @@ p {
 }
 
 #odin-icon {
+  margin-left: 20px;
   height: 60px;
   width: 45px;
 }
@@ -118,7 +123,7 @@ p {
 }
 
 .main-heading {
-  overflow: auto;
+  overflow: hidden;;
   margin-top: 0;
   margin-bottom: 1.375rem;
   padding-bottom: 1.875rem;
@@ -200,6 +205,17 @@ h3 {
   }
 }
 
+@media screen and (min-width: 845px) {
+  .main-container .row .how-it-works-col {
+    width: 31%;
+  }
+
+  .img-sm{
+    height: 165px;
+    width: auto;
+  }
+}
+
 .curriculum-details {
   vertical-align: center;
 }
@@ -227,6 +243,43 @@ h3 {
   width: 80px;
   margin-bottom: 10px
 }
+
+
+@media screen and (min-width: 630px) {
+
+  .curriculum-details .row .curriculum-detail {
+    width: 48%;
+  }
+
+  .curriculum-details-img-sm {
+    height: 160px;
+    width: 160px;
+
+  }
+
+  .curriculum-details-tile {
+    height: 255px;
+    width: 255px;
+  }
+
+  .curriculum-details .row .last-curriculum-tile {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 1090px) {
+  .curriculum-details .row .curriculum-detail {
+    width: 32%;
+  }
+
+  .curriculum-details .row .last-curriculum-tile {
+    width: 100%;
+  }
+
+}
+
+
 
 .orange {
   background: #cc9543;
@@ -297,6 +350,18 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1320px) {
+
+  .success-stories .row .success-story-col {
+    width: 46%;
+  }
+
+  .success-story {
+    width: 70%;
+  }
+  
+}
+
 .success-story-lk {
   margin-bottom: 4rem;
   color: rgba(74,74,74,0.7);
@@ -316,10 +381,24 @@ h3 {
 }
 
 #footer {
+  overflow: hidden;
   position: relative;
   bottom: 0;
   width: 100%;
-  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+
+#footer .logo-footer .row .col-12 .logo-text {
+  margin-top: 20px;
+  margin-left: 10px;
+
+  font-family: 'norse';
+  font-size: 1.7rem;
+  display: inline-block;
 }
 
 .social-icon {
@@ -377,5 +456,40 @@ h3 {
     float: left;
     width: 50%;
   }
+}
+
+.hide-845 {
+  display: none;
+}
+
+.logo-footer {
+  overflow: hidden;
+  float: left;
 
 }
+
+@media screen and (min-width: 845px) {
+  #footer{
+    height: 275px;
+
+  }
+
+  .hide-845 {
+    display: inline-block;
+  }
+
+  .logo-footer {
+    width: 32%;
+  }
+
+  .social-nav {
+    width: 32%;
+  }
+
+  .footer-links {
+    width: 32%;
+
+  }
+
+
+} 
